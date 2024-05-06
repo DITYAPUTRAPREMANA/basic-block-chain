@@ -57,7 +57,7 @@ class Blockchain(object):
     def new_transaction(self, voter_id, candidate):
         transaction = {'voter_id': voter_id, 'candidate': candidate}
         self.current_transactions.append(transaction)
-        return len(self.chain) + 1  # Index of the block that will hold this transaction
+        return len(self.chain) + 1  # Index traksaksi blockchain
 
     @property
     def last_block(self):
